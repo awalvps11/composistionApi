@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TemlateRef />
+    <ClickCounter />
+    <br />
+    <hover-counter />
   </div>
 </template>
 
 <script>
+import ClickCounter from "../components/ClickCounter.vue";
+import HoverCounter from "../components/HoverCounter.vue";
+import TempalteRef from "../components/TempalteRef.vue";
+import CounterMixin from "../mixins/counter";
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+    TempalteRef,
+    ClickCounter,
+    HoverCounter,
+  },
+  mixins: [CounterMixin],
+};
 </script>
+<style scoped></style>

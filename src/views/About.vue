@@ -1,5 +1,16 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <post-list />
   </div>
 </template>
+
+<script>
+import PostList from "../components/PostList.vue";
+export default {
+  components: {
+    PostList,
+  },
+};
+</script>
+
+<style></style>
