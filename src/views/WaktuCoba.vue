@@ -23,6 +23,11 @@
       <computed />
     </div>
     <br />
+    <div>
+      <Watch />
+    </div>
+
+    <br />
   </div>
 </template>
 
@@ -33,6 +38,7 @@ import Methode from "../components/Methode.vue";
 import StopWatch from "../components/StopWatch.vue";
 import Timer from "../components/Timer.vue";
 import Vmodel from "../components/Vmodel.vue";
+import Watch from "../components/Watch.vue";
 export default {
   name: "WaktuCoba",
   components: {
@@ -42,6 +48,7 @@ export default {
     Methode,
     Vmodel,
     Computed,
+    Watch,
   },
 };
 </script>

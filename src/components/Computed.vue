@@ -1,7 +1,7 @@
 <template>
   <div>
     <input type="text" placeholder="Full name" v-model="firstName" />
-    <input type="text" placeholder="Full name" v-model="lasttName" />
+    <input type="text" placeholder="Full name" v-model="lastName" />
     <h3>option Fullname {{ fullName }}</h3>
     <br />
     <br />
@@ -46,12 +46,12 @@ export default {
   data() {
     return {
       firstName: "",
-      lasttName: "",
+      lastName: "",
     };
   },
   computed: {
     fullName() {
-      return `${this.firstName} ${this.lasttName}`;
+      return `${this.firstName} ${this.lastName}`;
     },
   },
 };
